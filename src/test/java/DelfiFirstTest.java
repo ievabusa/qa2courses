@@ -13,7 +13,7 @@ public class DelfiFirstTest {
         WebDriver driver = new FirefoxDriver();
         driver.get("Http:delfi.lv");
 
-        String articleToCheck = "'OlyBet' basketbola līga: LU - 'Kalev/Cramo'. Video tiešraide";
+        String articleToCheck = "Daugavpilī faktiski izjukusi Eigima un Lāčplēša koalīcija; ietekmi atgūst 'Saskaņa'";
 
         WebElement article = driver.findElement(ARTICLE_TITLE);
 
