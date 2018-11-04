@@ -40,9 +40,11 @@ public class CompareFirstFiveWebMobArticleTiltes {
 
             String mobTitlesText = mobElements.get(i).getText();
             mobTitles.add(mobTitlesText);
+        }
 
-            Assertions.assertEquals(webTitles,mobTitles, "First 5 article titles on web/mob pages aren't equal");
+        for (int i = 0; i < 5; i++) {
 
+            Assertions.assertEquals(webTitles.get(i), mobTitles.get(i), "Web article Nr. " + i + "incorrect!");
         }
     }
 }
